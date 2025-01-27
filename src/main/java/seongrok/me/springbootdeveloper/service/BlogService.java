@@ -1,7 +1,9 @@
 package seongrok.me.springbootdeveloper.service;
 
+import jakarta.transaction.Transactional;
 import seongrok.me.springbootdeveloper.domain.Article;
 import seongrok.me.springbootdeveloper.dto.AddArticleRequest;
+import seongrok.me.springbootdeveloper.dto.UpdateArticleRequest;
 import seongrok.me.springbootdeveloper.repository.BlogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -19,5 +21,19 @@ public class BlogService {
 
   public List<Article> findAll() {
     return blogRepository.findAll();
+  }
+  public Article findById(long id) {
+    return blogRepository.findById(id)
+        .orElseThrow(() -> new IllegalArgumentException("not found" + id));
+  }
+  public void delete(long id) {
+    blogRepository.deleteById(id);
+  }
+  @Transactional
+  public Article update(long id, UpdateArticleRequest request) {
+    Article article = blogRepository.findById(id)
+        .orElseThrow(() -> new IllegalArgumentException("not found" + id));
+    article.update(request.getTitle(),request.getContent());
+    return article;
   }
 }

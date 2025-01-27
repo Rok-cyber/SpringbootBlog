@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="sql file added">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="test code(sql)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/dto/UpdateArticleRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737917251162</updated>
       <workItem from="1737917252135" duration="11664000" />
-      <workItem from="1737956061370" duration="5212000" />
+      <workItem from="1737956061370" duration="11269000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor error(do not make package names with upper case letter)">
       <option name="closed" value="true" />
@@ -225,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737958043271</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test code(sql)">
+      <option name="closed" value="true" />
+      <created>1737961303958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737961303958</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +256,7 @@
     <MESSAGE value="Fix minor error(do not make package names with upper case letter)" />
     <MESSAGE value="add findall method" />
     <MESSAGE value="sql file added" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql file added" />
+    <MESSAGE value="test code(sql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="test code(sql)" />
   </component>
 </project>
