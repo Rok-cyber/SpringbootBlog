@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="test code(sql)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/dto/UpdateArticleRequest.java" afterDir="false" />
+    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="controller method code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +83,7 @@
   "keyToString": {
     "Gradle.BlogApiControllerTest.executor": "Run",
     "Gradle.BlogApiControllerTest.finallArticles.executor": "Debug",
+    "Gradle.BlogApiControllerTest.updateArticle.executor": "Debug",
     "Gradle.Build springblog.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -146,6 +143,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="BlogApiControllerTest.updateArticle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;seongrok.me.springbootdeveloper.controller.BlogApiControllerTest.updateArticle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="SpringbootDeveloper" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springblog.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="seongrok.me.springbootdeveloper.SpringbootDeveloper" />
@@ -156,6 +177,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.BlogApiControllerTest" />
+        <item itemvalue="Gradle.BlogApiControllerTest.updateArticle" />
         <item itemvalue="Gradle.BlogApiControllerTest" />
       </list>
     </recent_temporary>
@@ -177,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737917251162</updated>
       <workItem from="1737917252135" duration="11664000" />
-      <workItem from="1737956061370" duration="11269000" />
+      <workItem from="1737956061370" duration="14327000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor error(do not make package names with upper case letter)">
       <option name="closed" value="true" />
@@ -235,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737961303958</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="controller method code">
+      <option name="closed" value="true" />
+      <created>1737991312627</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737991312627</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +287,7 @@
     <MESSAGE value="add findall method" />
     <MESSAGE value="sql file added" />
     <MESSAGE value="test code(sql)" />
-    <option name="LAST_COMMIT_MESSAGE" value="test code(sql)" />
+    <MESSAGE value="controller method code" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller method code" />
   </component>
 </project>
