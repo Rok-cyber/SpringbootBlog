@@ -19,7 +19,9 @@ import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -54,14 +56,30 @@ class BlogApiControllerTest {
 
     final String requestBody = objectMapper.writeValueAsString(userRequest);
 
-    ResultActions result = mockMvc.perform(post(url)
-        .content(requestBody)
-        .contentType(MediaType.APPLICATION_JSON_VALUE));
+    ResultActions result = mockMvc.perform(
+        post(url).content(requestBody).contentType(MediaType.APPLICATION_JSON_VALUE));
     result.andExpect(status().isCreated());
     List<Article> articles = blogRepository.findAll();
 
     assertThat(articles.size()).isEqualTo(1);
     assertThat(articles.get(0).getTitle()).isEqualTo(title);
     assertThat(articles.get(0).getContent()).isEqualTo(content);
+  }
+  @DisplayName("findAllArticles: Search blog contents successfully")
+  @Test
+  public void findAllArticles() throws Exception {
+    final String url = "/api/articles";
+    final String title = "title";
+    final String content = "content";
+
+    blogRepository.save(Article.builder().title(title).content(content).build());
+
+    final ResultActions resultActions = mockMvc.perform(get(url)
+        .accept(MediaType.APPLICATION_JSON));
+
+    resultActions
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$[0].content").value(content))
+        .andExpect(jsonPath("$[0].title").value(title));
   }
 }
