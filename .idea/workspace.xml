@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="Tester added">
-      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/Article.java" afterDir="false" />
+    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="SQL UPDATE, added date function.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/dto/ArticleViewResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/newArticle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/SpringbootDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/SpringbootDeveloper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +211,7 @@
       <workItem from="1737956061370" duration="14491000" />
       <workItem from="1738037362189" duration="3279000" />
       <workItem from="1738130500894" duration="586000" />
-      <workItem from="1738293014393" duration="2923000" />
+      <workItem from="1738293014393" duration="8538000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor error(do not make package names with upper case letter)">
       <option name="closed" value="true" />
@@ -286,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738295815379</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="SQL UPDATE, added date function.">
+      <option name="closed" value="true" />
+      <created>1738295962489</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738295962489</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +326,8 @@
     <MESSAGE value="controller method code" />
     <MESSAGE value="Add REST API implementation with JpaRepository, Lombok, and test cases&#10;&#10;- Implemented REST API for updating blog articles.&#10;- Used JpaRepository for database interactions.&#10;- Applied Lombok annotations for cleaner and concise code.&#10;- Verified functionality with test cases using MockMvc." />
     <MESSAGE value="Tester added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tester added" />
+    <MESSAGE value="SQL UPDATE, added date function." />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL UPDATE, added date function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
