@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="controller method code">
+    <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="Add REST API implementation with JpaRepository, Lombok, and test cases&#10;&#10;- Implemented REST API for updating blog articles.&#10;- Used JpaRepository for database interactions.&#10;- Applied Lombok annotations for cleaner and concise code.&#10;- Verified functionality with test cases using MockMvc.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/ExampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/dto/ArticleListViewResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/seongrok/me/springbootdeveloper/controller/BlogApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +49,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -81,6 +87,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.BlogApiControllerTest.executor": "Run",
     "Gradle.BlogApiControllerTest.finallArticles.executor": "Debug",
     "Gradle.BlogApiControllerTest.updateArticle.executor": "Debug",
@@ -101,7 +108,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -118,7 +125,7 @@
       <recent name="seongrok.me.springbootdeveloper.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BlogApiControllerTest">
+  <component name="RunManager" selected="Spring Boot.SpringbootDeveloper">
     <configuration name="BlogApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -199,7 +206,10 @@
       <option name="presentableId" value="Default" />
       <updated>1737917251162</updated>
       <workItem from="1737917252135" duration="11664000" />
-      <workItem from="1737956061370" duration="14327000" />
+      <workItem from="1737956061370" duration="14491000" />
+      <workItem from="1738037362189" duration="3279000" />
+      <workItem from="1738130500894" duration="586000" />
+      <workItem from="1738293014393" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor error(do not make package names with upper case letter)">
       <option name="closed" value="true" />
@@ -265,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737991312627</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add REST API implementation with JpaRepository, Lombok, and test cases&#10;&#10;- Implemented REST API for updating blog articles.&#10;- Used JpaRepository for database interactions.&#10;- Applied Lombok annotations for cleaner and concise code.&#10;- Verified functionality with test cases using MockMvc.">
+      <option name="closed" value="true" />
+      <created>1737995228730</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737995228730</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +306,17 @@
     <MESSAGE value="sql file added" />
     <MESSAGE value="test code(sql)" />
     <MESSAGE value="controller method code" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller method code" />
+    <MESSAGE value="Add REST API implementation with JpaRepository, Lombok, and test cases&#10;&#10;- Implemented REST API for updating blog articles.&#10;- Used JpaRepository for database interactions.&#10;- Applied Lombok annotations for cleaner and concise code.&#10;- Verified functionality with test cases using MockMvc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add REST API implementation with JpaRepository, Lombok, and test cases&#10;&#10;- Implemented REST API for updating blog articles.&#10;- Used JpaRepository for database interactions.&#10;- Applied Lombok annotations for cleaner and concise code.&#10;- Verified functionality with test cases using MockMvc." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

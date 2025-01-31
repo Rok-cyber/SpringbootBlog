@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TimeLeaf Studying</h1>
+<p th:text="${#temporals.format(today, 'yyyy-MM-dd')}"></p>
+<div th:object="${person}">
+    <p th:text="|Name : *{name}|"></p>
+    <p th:text="|Age : *{age}|"></p>
+    <p>Hobby</p>
+    <ul th:each="hobby : *{hobbies}">
+        <li th:text="${hobby}"></li>
+        <span th:if="${hobby == 'Work Out'}">(Best)</span>
+    </ul>
+</div>
+<a th:href="@{/api/articles/{id}(id=${person.id})}">reading</a>
+</body>
+</html>
