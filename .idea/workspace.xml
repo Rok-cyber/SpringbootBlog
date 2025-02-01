@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="212ad21c-2825-475f-a8eb-225e7b8bb087" name="Changes" comment="bug fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/UserViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/dto/AddUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/UserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/controller/BlogViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seongrok/me/springbootdeveloper/domain/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +49,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -208,7 +213,7 @@
       <workItem from="1738037362189" duration="3279000" />
       <workItem from="1738130500894" duration="586000" />
       <workItem from="1738293014393" duration="10671000" />
-      <workItem from="1738390517916" duration="1482000" />
+      <workItem from="1738390517916" duration="11681000" />
     </task>
     <task id="LOCAL-00001" summary="Fix minor error(do not make package names with upper case letter)">
       <option name="closed" value="true" />
@@ -306,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738301713245</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="bug fixed">
+      <option name="closed" value="true" />
+      <created>1738392004894</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738392004894</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
